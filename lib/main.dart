@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Usage Analytics Tracker'),
     );
   }
 }
@@ -45,7 +45,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -70,6 +69,20 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+      ),
+      drawer: new Drawer(
+          child: new ListView(
+              children: <Widget>[
+                new DrawerHeader(
+                  child: new Text('Usage Analytics App'),
+                ),
+                new ListTile(
+                  title: new Text('First Menu Item'),
+                  onTap: () {},
+                ),
+                new Divider(),
+              ]
+          )
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
