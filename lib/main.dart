@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Usage Analytics App',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -77,7 +77,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: new Text('Usage Analytics App'),
                 ),
                 new ListTile(
-                  title: new Text('First Menu Item'),
+                  title: new Text('Home'),
+                  onTap: () {},
+                ),
+                new ListTile(
+                  title: new Text('About'),
                   onTap: () {},
                 ),
                 new Divider(),
