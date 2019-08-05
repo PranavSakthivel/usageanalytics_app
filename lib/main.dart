@@ -1,4 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+
+
 
 void main() => runApp(MyApp());
 
@@ -77,7 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: new Text('Usage Analytics App'),
                 ),
                 new ListTile(
-                  title: new Text('First Menu Item'),
+                  title: new Text('Home'),
+                  onTap: () {},
+                ),
+                new ListTile(
+                  title: new Text('About'),
                   onTap: () {},
                 ),
                 new Divider(),
