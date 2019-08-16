@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "244862923753",
+    "firebase_url": "https://usage-analytics-app.firebaseio.com",
+    "project_id": "usage-analytics-app",
+    "storage_bucket": "usage-analytics-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244862923753:android:fc9f9cb545f126c3",
+        "android_client_info": {
+          "package_name": "com.pranav.usageanalytics_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244862923753-0g5oeopmm9v0uafst67v703prh2feuv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKtyC7Y7K3pB_OscbySPTwgiSZx3EcrSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244862923753-0g5oeopmm9v0uafst67v703prh2feuv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
