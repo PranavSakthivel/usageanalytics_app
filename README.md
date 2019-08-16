@@ -2,4 +2,3 @@
 
 A flutter app for tracking usage analytics
 
-
