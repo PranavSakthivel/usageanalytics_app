@@ -73,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   title: new Text('Home'),
                   onTap: () {},
                 ),
+                new Divider(),
                 new ListTile(
                   title: new Text('About'),
                   onTap: () {},
