@@ -107,8 +107,15 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            RichText(
+              text: TextSpan(
+                text: 'Welcome to the Usage Analytics App! ',
+                style: /*DefaultTextStyle.of(context).style*/TextStyle(fontSize: 25.0, color: Colors.black),
+                children: <TextSpan>[
+                  TextSpan(text: 'This page is a demo of the Column element of flutter. ', style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(text: 'Press that button down below to increase the counter.', style: TextStyle(fontStyle: FontStyle.italic)),
+                ],
+              ),
             ),
             Text(
               '$_counter',
