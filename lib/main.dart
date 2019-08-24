@@ -10,8 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Usage Analytics App',
       theme: ThemeData(
-
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.green, //Primary color scheme to be followed through app can be set here
       ),
       home: MyHomePage(title: 'Usage Analytics Tracker'),
     );
@@ -41,18 +40,18 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      drawer: new Drawer(
+      drawer: new Drawer( //Code for the Side Drawer in the app
           child: new ListView(
               children: <Widget>[
-                new DrawerHeader(
+                new DrawerHeader( //Code for the header of drawer, may contain optional image
                   child: new Text('Usage Analytics App'),
                 ),
-                new ListTile(
+                new ListTile( //List item that takes you back to the home page
                   title: new Text('Home'),
                   onTap: () {},
                 ),
-                new Divider(),
-                new ListTile(
+                new Divider(), //Divider to look clean
+                new ListTile( //List tile item for about
                   title: new Text('About'),
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute<void>(
@@ -80,13 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
 
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column( //Columns allow for multiple widgets, one after the other
+          mainAxisAlignment: MainAxisAlignment.center, //Column is set to be center aligned.
           children: <Widget>[
-            RichText(
+            RichText( //RichText allows for better text formatting and custom styles per text block
               text: TextSpan(
                 text: 'Welcome to the Usage Analytics App! ',
-                style: /*DefaultTextStyle.of(context).style*/TextStyle(fontSize: 25.0, color: Colors.black),
+                style: TextStyle(fontSize: 25.0, color: Colors.black),
                 children: <TextSpan>[
                   TextSpan(text: 'This page is a demo of the Column element of flutter. ', style: TextStyle(fontWeight: FontWeight.bold)),
                   TextSpan(text: 'Press that button down below to increase the counter.', style: TextStyle(fontStyle: FontStyle.italic)),
